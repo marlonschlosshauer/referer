@@ -1,5 +1,7 @@
 import { headers } from "next/headers";
 
+export const dynamic = "force-dynamic";
+
 export default async function NotFound() {
   const list = await headers();
   const host = list.get("host");
